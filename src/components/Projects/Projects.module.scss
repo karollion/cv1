@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.projects {
+  background: $color-light;
+  display: none;
+  z-index: 2;
+}
+
+.active {
+  display: block;
+}

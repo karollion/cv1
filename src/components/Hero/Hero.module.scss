@@ -1,0 +1,36 @@
+@import '../../styles/settings.scss';
+
+.hero {
+  width: 100%;
+  height: 10vh;
+  background: $color-light;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  top: 0;
+  position: sticky;
+  font-size: $base-size * 2;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+
+  li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

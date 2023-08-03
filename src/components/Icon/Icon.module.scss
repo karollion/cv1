@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.icons {
+  font-size: $base-size * 2;
+  display: flex;
+  gap: 15px;
+  
+  a {
+    font-size: 0px;
+  }
+}
