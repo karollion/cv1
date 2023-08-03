@@ -1,0 +1,29 @@
+@import '../../styles/settings.scss';
+
+.container {
+  display: flex;
+  gap: 10px;
+  height: 70vh;
+  width: 100%;
+  margin: 3vh 0;
+  background: $color-light;
+}
+
+.image {
+  margin: 5px auto;
+  object-fit: contain;
+}
+
+.toImage {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.toDescription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}

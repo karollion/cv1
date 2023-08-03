@@ -22,7 +22,7 @@ const initialState = {
   projects: [
     {
       id: 1,
-      title: 'Music Page',
+      title: 'Music Service',
       tech: 'HTML scss js',
       img: 'musicPage',
       about: 'stronka z muzyką jest szukajka i losowajka',

@@ -11,8 +11,8 @@ const Projects = () => {
 
   return (
     <div className={clsx(styles.projects, page === 2 && styles.active)}>
-      <h2>moje projekty stronki</h2>
-      <section>
+      <h2 className={styles.title}>Websites</h2>
+      <section className={styles.section}>
         {projects.map(project => <Project key={project.id} {...project}  />)}
       </section>
     </div>

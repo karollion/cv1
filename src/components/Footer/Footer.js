@@ -8,7 +8,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <Info title={'Phone'} data={'690-302-400'} />
       <Info title={'E-mail'} data={'karol.bernatowicz@gmail.com'} />
-      <Info title={'Socialmedia'} data2={<Icon />}/>
+      <Info title={'Socialmedia'} data={<Icon />}/>
     </div>
   );
 };

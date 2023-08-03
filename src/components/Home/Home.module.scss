@@ -27,17 +27,29 @@
   justify-content: space-between;
 }
 
-.foto {
+.imageContainer {
   background: $color-medium;
   width: 48%;
   height: 80%;
-  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  color: $color-light;
+  text-align: center;
+}
+
+.image {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 .info {
   width: 48%;
   height: 80%;
-  
+  p {
+    font-family: $font-text2;
+  }
 }
 
 .active {

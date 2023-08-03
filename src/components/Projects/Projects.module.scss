@@ -1,9 +1,21 @@
 @import '../../styles/settings.scss';
 
 .projects {
-  background: $color-light;
   display: none;
   z-index: 2;
+  color: $color-text-light;
+  margin-top: 2vh;
+}
+
+.title {
+  font-size: $base-size * 2;
+}
+
+.section {
+  color: $color-text-dark;
+  a {
+    color: $color-text-dark;
+  }
 }
 
 .active {
