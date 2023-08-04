@@ -1,4 +1,5 @@
 import styles from './Project.module.scss';
+import Button from '../Button/Button';
 
 const Project = props => {
   return (
@@ -14,7 +15,8 @@ const Project = props => {
         <h2>{props.title}</h2>
         <p>{props.tech}</p>
         <p>{props.about}</p>
-        <a href={props.link}>{props.link}</a>
+        <Button href={props.link}><i className="fa fa-share"> Go to project</i></Button>
+        
       </div>
     </div>
   );

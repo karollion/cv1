@@ -1,9 +1,24 @@
 @import '../../styles/settings.scss';
 
 .contact {
-  background: $color-light;
+  color: $color-text-light;
   display: none;
   z-index: 2;
+  margin-top: 2vh;
+}
+
+.title {
+  font-size: $base-size * 2;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  height: 70vh;
+  width: 100%;
+  margin: 3vh 0;
+  background: $color-light;
+  box-shadow: 0 0 20px black;
 }
 
 .active {

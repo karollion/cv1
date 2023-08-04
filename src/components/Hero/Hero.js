@@ -12,9 +12,10 @@ const Hero = () => {
   }
   return (
     <div className={styles.hero}>
-      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz</h2>
+      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz / <span>Upholsterer</span></h2>
       <ul className={styles.nav}>
-        <NavLink id={1} >About</NavLink>
+        <NavLink id={0} >About</NavLink>
+        <NavLink id={1} >Resume</NavLink>
         <NavLink id={2} >Projects</NavLink>
         <NavLink id={3} >Contact</NavLink>
       </ul>
