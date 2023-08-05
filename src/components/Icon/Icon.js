@@ -17,9 +17,6 @@ const Icon = () => {
             <i className="fa fa-linkedin"></i><span>linkedln</span></a>
         </li>
       </ul>
-      
-      
-      
     </div>
   );
 };

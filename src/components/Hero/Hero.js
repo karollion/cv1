@@ -12,7 +12,7 @@ const Hero = () => {
   }
   return (
     <div className={styles.hero}>
-      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz / <span>Upholsterer</span></h2>
+      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz / <span>Junior Front-end Developer</span></h2>
       <ul className={styles.nav}>
         <NavLink id={0} >About</NavLink>
         <NavLink id={1} >Resume</NavLink>

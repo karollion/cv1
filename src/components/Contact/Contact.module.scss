@@ -13,12 +13,21 @@
 
 .container {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  gap: 30px;
   height: 70vh;
   width: 100%;
   margin: 3vh 0;
   background: $color-light;
+  color: $color-text-dark;
   box-shadow: 0 0 20px black;
+
+  a {
+    color: $color-text-dark;
+    font-family: $font-text2;
+  }
 }
 
 .active {

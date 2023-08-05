@@ -63,9 +63,13 @@
   width: 50%;
   height: 100%;
   background: $color-light;
-  padding: 20px 30px;
+  padding: 30px 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   p {
     font-family: $font-text2;
+    font-size: $base-size * 1.5;
   }
 }
 

@@ -1,5 +1,6 @@
 import styles from './Project.module.scss';
 import Button from '../Button/Button';
+import Label from '../Label/Label';
 
 const Project = props => {
   return (
@@ -13,10 +14,13 @@ const Project = props => {
       </div>
       <div className={styles.toDescription}>
         <h2>{props.title}</h2>
-        <p>{props.tech}</p>
+        <div className={styles.lebels}>
+          {props.tech.map(tech => <Label key={tech.id} {...tech} />)}
+        </div>
         <p>{props.about}</p>
-        <Button href={props.link}><i className="fa fa-share"> Go to project</i></Button>
-        
+        <a href={props.link}>
+        <Button><i className="fa fa-share"> Go to project</i></Button>
+        </a>
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ export const getPageNumber  = (state) => state.activePage;
 export const getAllProjects = (state) => state.projects;
 export const getAllExperience = (state) => state.experience;
 export const getAllEducation = (state) => state.education;
+export const getSkills = (state) => state.skills;
+export const getTechnologies = (state) => state.technologies;
 
 // action creators
 export const changePage = payload => ({type: 'CHANGE_PAGE', payload});

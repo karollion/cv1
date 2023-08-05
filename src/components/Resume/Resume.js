@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import { getPageNumber } from '../../redux/store';
 import { getAllExperience } from '../../redux/store';
 import { getAllEducation } from '../../redux/store';
+import Lists from '../Lists/Lists';
 
 const Resume = () => {
   const page = useSelector(getPageNumber);
@@ -13,7 +14,7 @@ const Resume = () => {
 
   return (
     <div className={clsx(styles.resume, page === 1 && styles.active)}>
-      <h2 className={styles.title}>Experience</h2>
+      <h2 className={styles.title}>Work experience</h2>
       <section className={styles.section}>
         {experience.map(experience => <Element key={experience.id} {...experience}  />)}
       </section>
@@ -21,7 +22,8 @@ const Resume = () => {
       <section className={styles.section}>
         {education.map(education => <Element key={education.id} {...education}  />)}
       </section>
-      <h2 className={styles.title}>Skills and qualifications</h2>
+      <h2 className={styles.title}>Skills and Expertise</h2>
+      <Lists />
     </div>
   );
 };

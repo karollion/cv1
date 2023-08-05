@@ -2,8 +2,8 @@ import styles from './Projects.module.scss';
 import clsx from 'clsx';
 import { useSelector } from 'react-redux';
 import { getPageNumber } from '../../redux/store';
-import Project from '../Project/Project';
 import { getAllProjects } from '../../redux/store';
+import Project from '../Project/Project';
 
 const Projects = () => {
   const page = useSelector(getPageNumber);
