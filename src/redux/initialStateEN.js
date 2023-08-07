@@ -1,4 +1,6 @@
 const initialState = {
+  about: 'I am intensively learning to create websites. For now, I have finished the frontend and started the backend. I use React to create pages.',
+
   experience: [
     {
       id: 1,
@@ -167,7 +169,26 @@ const initialState = {
     },
   ],
 
+  interfaceElements: [
+    {
+      job: 'Junior Front-end Developer',
+      about: 'about',
+      resume: 'resume',
+      proj: 'projects',
+      contact: 'contact',
+      phone: 'phone',
+      email: 'e-mail',
+      media: 'socialmedia',
+      experience: 'work experience',
+      education: 'education',
+      skills: 'Skills and Expertise',
+      websites: 'Websites',
+    },
+  ],
+
   activePage: 0,
+
+  language: 'EN',
 };
 
 export default initialState;

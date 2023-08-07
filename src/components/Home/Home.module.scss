@@ -67,9 +67,11 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  //text-align: justify;
   p {
     font-family: $font-text2;
     font-size: $base-size * 1.5;
+    line-height: $base-size * 1.75;
   }
 }
 

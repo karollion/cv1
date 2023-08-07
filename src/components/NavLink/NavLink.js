@@ -1,4 +1,3 @@
-import styles from './NavLink.module.scss';
 import { useDispatch } from 'react-redux';
 import { changePage } from '../../redux/store';
 
@@ -10,7 +9,7 @@ const NavLink = props => {
     dispatch(changePage(props.id));
   }
   return (
-      <li className={styles.link} onClick={handleClick} >{props.children}</li>
+      <li onClick={handleClick} >{props.children}</li>
   );
 };
 
