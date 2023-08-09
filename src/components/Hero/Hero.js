@@ -25,13 +25,19 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz / <span>{interfElem[0].job}</span></h2>
-      <ul className={styles.nav}>
-        <NavLink id={0} >{interfElem[0].about}</NavLink>
-        <NavLink id={1} >{interfElem[0].resume}</NavLink>
-        <NavLink id={2} >{interfElem[0].proj}</NavLink>
-        <NavLink id={3} >{interfElem[0].contact}</NavLink>
-        <li onClick={languageClick} >{language}</li>
-      </ul>
+      <input className ={styles.input} id="toggle" type="checkbox"/>
+      <label className={styles.menuButton} htmlFor="toggle">
+        <i className="fa fa-bars"></i>
+      </label>
+      <div className={styles.menu}>
+        <ul className={styles.nav}>
+          <NavLink id={0} >{interfElem[0].about}</NavLink>
+          <NavLink id={1} >{interfElem[0].resume}</NavLink>
+          <NavLink id={2} >{interfElem[0].proj}</NavLink>
+          <NavLink id={3} >{interfElem[0].contact}</NavLink>
+          <li onClick={languageClick} >{language}</li>
+        </ul>
+      </div>
     </div>
   );
 };

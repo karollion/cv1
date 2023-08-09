@@ -1,5 +1,5 @@
 const initialState = {
-  about: 'Intensywnie uczę się tworzenia stron internetowych. Na razie skończyłem frontend i zacząłem backend. Używam Reacta do tworzenia stron.',
+  about: 'Od prawie roku intensywnie uczę się tworzenia stron internetowych. Do tej pory ukończyłem naukę frontendu i zacząłem backend. W przyszłości chcę pracować jako full stack developer. Wiem że mam mało doświadczenia dlatego poszukuje pracy w której zdobęde nowe umiejętności.',
 
   experience: [
     {
@@ -45,14 +45,7 @@ const initialState = {
       position: 'Inżynier',
       details: 'Wydział elektryczny. Specjalizacja elektroautomatyka okrętowa',
     },
-    {
-      id: 3,
-      years: '2005 - 2009',
-      institution: 'PZS nr.1',
-      city: 'Kościerzyna',
-      position: 'Technik',
-      details: 'Kierunek ekonomia',
-    },
+    
   ],
 
   skills: [
@@ -62,7 +55,7 @@ const initialState = {
     },
     {
       id: 2,
-      name: 'Analityczne myslenie',
+      name: 'Analityczne myślenie',
     },
     {
       id: 3,
@@ -121,7 +114,7 @@ const initialState = {
         },
       ],
       img: 'cvpage',
-      about: 'Moja strona domowa.',
+      about: 'Moja strona domowa. Zawiera kilka zdań o mnie, informacje o doświadczeniu zawodowym i wykształceniu. Znajdują się tutaj również wykonane przezemnie projekty.',
       link: 'https://karollion.github.io',
     },
     {

@@ -1,5 +1,5 @@
 const initialState = {
-  about: 'I am intensively learning to create websites. For now, I have finished the frontend and started the backend. I use React to create pages.',
+  about: 'I have been intensively learning web development for almost a year. So far I have finished learning frontend and started backend. In the future I want to work as a full stack developer. I know that I have little experience, so I am looking for a job where I will gain new skills.',
 
   experience: [
     {
@@ -44,14 +44,6 @@ const initialState = {
       city: 'Gdynia',
       position: 'Engineer',
       details: 'Electrical department. Specialization in marine electroautomation',
-    },
-    {
-      id: 3,
-      years: '2005 - 2009',
-      institution: 'PZS nr.1',
-      city: 'Kościerzyna',
-      position: 'Technician',
-      details: 'Economics direction',
     },
   ],
 
@@ -121,7 +113,7 @@ const initialState = {
         },
       ],
       img: 'cvpage',
-      about: 'My home page.',
+      about: 'My home page. It contains a few sentences about me, information about my professional experience and education. There are also projects made by me.',
       link: 'https://karollion.github.io',
     },
     {
