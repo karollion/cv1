@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <div className={styles.hero}>
-      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz / <span>{interfElem[0].job}</span></h2>
+      <h2 className={styles.name} onClick={handleClick} >Karol Bernatowicz</h2>
       <input className ={styles.input} id="toggle" type="checkbox"/>
       <label className={styles.menuButton} htmlFor="toggle">
         <i className="fa fa-bars"></i>

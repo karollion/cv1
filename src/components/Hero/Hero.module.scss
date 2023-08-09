@@ -12,10 +12,8 @@
   position: sticky;
   font-size: $base-size * 1.75;
 
-  span {
-    font-size: $base-size * 1.5;
-    font-weight: 500;
-    
+  .menu {
+    display: flex;
   }
 
   ul {
@@ -85,4 +83,15 @@
         height: 300px;
     }
 }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .hero {
+    position: relative;
+
+    h2{
+      font-size: $base-size * 1.5;
+      line-height: 10vh;
+    }
+  }
 }
