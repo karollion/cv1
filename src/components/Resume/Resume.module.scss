@@ -3,7 +3,6 @@
 .resume {
   color: $color-text-light;
   margin-top: 2vh;
-  display: none;
   z-index: 2;
 }
 
@@ -13,8 +12,4 @@
 
 .section {
   color: $color-text-dark;
-}
-
-.active {
-  display: block;
 }

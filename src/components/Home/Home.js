@@ -1,18 +1,15 @@
 import styles from './Home.module.scss';
-import clsx from 'clsx';
 import { useSelector } from 'react-redux';
-import { getPageNumber } from '../../redux/store';
 import { getInterfaceElements } from '../../redux/store';
 import { getAbout } from '../../redux/store';
 import Icon from '../Icon/Icon';
 
 const Home = () => {
-  const page = useSelector(getPageNumber);
   const interfElem = useSelector(getInterfaceElements);
   const about = useSelector(getAbout);
 
   return (
-    <div className={clsx(styles.home, page === 0 && styles.active)}>
+    <div className={styles.home}>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <div className={styles.imageContainerUp}>

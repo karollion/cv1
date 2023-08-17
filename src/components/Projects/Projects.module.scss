@@ -1,7 +1,6 @@
 @import '../../styles/settings.scss';
 
 .projects {
-  display: none;
   z-index: 2;
   color: $color-text-light;
   margin-top: 2vh;
@@ -16,8 +15,4 @@
   a {
     color: $color-text-dark;
   }
-}
-
-.active {
-  display: block;
 }

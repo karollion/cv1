@@ -2,7 +2,6 @@
 
 .contact {
   color: $color-text-light;
-  display: none;
   z-index: 2;
   margin-top: 2vh;
 }
@@ -28,8 +27,4 @@
     color: $color-text-dark;
     font-family: $font-text2;
   }
-}
-
-.active {
-  display: block;
 }
