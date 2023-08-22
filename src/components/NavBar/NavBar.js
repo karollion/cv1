@@ -4,6 +4,7 @@ import { getLanguage } from '../../redux/store';
 import { useDispatch } from 'react-redux';
 import { changeLanguage } from '../../redux/store';
 import { getInterfaceElements } from '../../redux/store';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   const language = useSelector(getLanguage);
@@ -17,17 +18,17 @@ const NavBar = () => {
 
   return (
     <div className={styles.navbar}>
-      <a href='/'className={styles.name}>Karol Bernatowicz</a>
+      <Link to='/'className={styles.name}>Karol Bernatowicz</Link>
       <input className ={styles.input} id="toggle" type="checkbox"/>
       <label className={styles.menuButton} htmlFor="toggle">
         <i className="fa fa-bars"></i>
       </label>
       <div className={styles.menu}>
         <ul className={styles.nav}>
-          <li><a href='/'>{interfElem[0].about}</a></li>
-          <li><a href='/resume'>{interfElem[0].resume}</a></li>
-          <li><a href='/projects'>{interfElem[0].proj}</a></li>
-          <li><a href='/contact'>{interfElem[0].contact}</a></li>
+          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to='/'>{interfElem[0].about}</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to='/resume'>{interfElem[0].resume}</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to='/projects'>{interfElem[0].proj}</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined} to='/contact'>{interfElem[0].contact}</NavLink></li>
           <li onClick={languageClick} >{language}</li>
         </ul>
       </div>

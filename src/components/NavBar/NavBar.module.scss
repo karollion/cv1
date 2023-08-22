@@ -35,6 +35,11 @@
     margin: 0;
     height: 100%;
     cursor: pointer;
+
+    .linkActive{
+      color: $color-medium;
+      text-decoration: underline;
+    }
   }
   .input,label{
     display: none;
