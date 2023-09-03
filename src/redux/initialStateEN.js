@@ -114,7 +114,7 @@ const initialState = {
       ],
       img: 'cvpage',
       about: 'My home page. It contains a few sentences about me, information about my professional experience and education. There are also projects made by me.',
-      link: 'https://karollion.github.io',
+      link: 'https://cv1--karollion.repl.co/',
     },
     {
       id: 1,
@@ -163,7 +163,7 @@ const initialState = {
 
   interfaceElements: [
     {
-      job: 'Junior Front-end Developer',
+      job: 'Junior Full Stack Developer',
       about: 'about',
       resume: 'resume',
       proj: 'projects',

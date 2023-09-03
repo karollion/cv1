@@ -115,7 +115,7 @@ const initialState = {
       ],
       img: 'cvpage',
       about: 'Moja strona domowa. Zawiera kilka zdań o mnie, informacje o doświadczeniu zawodowym i wykształceniu. Znajdują się tutaj również wykonane przezemnie projekty.',
-      link: 'https://karollion.github.io',
+      link: 'https://cv1--karollion.repl.co/',
     },
     {
       id: 1,
@@ -164,7 +164,7 @@ const initialState = {
 
   interfaceElements: [
     {
-      job: 'Junior Front-end Developer',
+      job: 'Junior Full Stack Developer',
       about: 'o mnie',
       resume: 'podsumowanie',
       proj: 'projekty',
