@@ -20,6 +20,7 @@
     position: absolute;
     z-index: 990;
     color: $color-text-light;
+    text-shadow: #000 0 0 10px;
     font-size: $base-size * 1.5;
     font-weight: 600;
   }
@@ -29,13 +30,15 @@
     width: 602px;
     height: 302px;
     top: -2px;
+    filter: brightness(60%);
+
   }
 
 
   @media (max-width: 768px) {
     .root {
       width: 100vh;
-      
+
       .footer{
         width: 100vh;
       }

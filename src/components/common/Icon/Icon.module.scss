@@ -9,8 +9,9 @@
   }
 
   a {
-    color: $color-text-dark;
-    font-size: $base-size * 2;
+    color: $color-text-light;
+    font-size: $base-size * 3;
+    text-shadow: #000 0 0 10px;
   }
 
   ul {

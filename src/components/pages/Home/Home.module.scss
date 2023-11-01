@@ -10,7 +10,7 @@
 .container {
   @extend %backgroundGlass;
   max-width: 900px;
-  height: 700px;
+  height: 500px;
   z-index: 2;
   margin: 100px auto;
   display: flex;
@@ -30,7 +30,7 @@
   justify-content: center;
   color: $color-light;
   text-align: center;
-  font-size: $base-size * 2;
+  font-size: $base-size * 1.5;
   
   p {
     margin: 5px;
@@ -43,16 +43,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
-  
-  a {
-    color: $color-light;
-  }
-  i {font-size: $base-size * 2.5;}
+  padding: 10px 0 30px 0;
 }
 
 .image {
-  width: 70%;
+  width: 200px;
+  height: 200px;
   margin: 15px auto;
   border-radius: 50%;
 }
@@ -74,7 +70,7 @@
 
 .line::after {
   display: block;
-  height: 7px;
+  height: 5px;
   width: 60%;
   margin: 10px auto;
   content: '';

@@ -48,7 +48,7 @@ const Stars = () => {
       <div className={styles.stars} id='stars'></div>
       <img 
         className={styles.image}
-        alt={'earth'}
+        alt={'moon'}
         src={`${process.env.PUBLIC_URL}/images/moon.png`} />
     </div>
   );

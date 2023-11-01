@@ -4,15 +4,15 @@
   color: $color-text-light;
   margin-top: 2vh;
   z-index: 2;
-}
 
-.title {
-  font-size: $base-size * 2;
-  text-align: center;
-}
+  .title {
+    font-size: $base-size * 2;
+    text-align: center;
+  }
 
-.section {
-  @extend %backgroundGlass;
-  margin: 30px auto;
-  color: $color-text-dark;
+  .section {
+    @extend %backgroundGlass;
+    margin: 30px auto;
+    color: $color-text-light;
+  }
 }

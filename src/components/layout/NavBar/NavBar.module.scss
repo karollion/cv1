@@ -37,13 +37,27 @@
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 0 7px;
     height: 100%;
     cursor: pointer;
 
-    .linkActive{
-      background: rgba(255, 255, 255, 0.35);
-      
+    .navlink {
+      width: 100%;
+      height: 100%;
+      padding: 0 7px;
+      display: flex;
+      align-items: center;
+    }
+    
+  }
+  .linkActive{
+    &::after {
+      display: block;
+      height: 5px;
+      width: 60%;
+      margin: 10px auto;
+      content: '';
+      background-color: $color-dark;
+      border-radius: 5px;
     }
   }
   .input,label{
@@ -60,13 +74,6 @@
     color: $color-text-light;
   }
 }
-
-.name {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
 
 @media (max-width: 768px) {
   .navbar {
