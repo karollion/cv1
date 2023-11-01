@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+.container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: 3vh 0;
+  padding: 20px 30px;
+  font-family: $font-text2;
+  color: $color-text-dark;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+li {
+  margin: 10px 0;
+}
