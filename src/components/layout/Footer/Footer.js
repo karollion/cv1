@@ -10,9 +10,13 @@ const Footer = () => {
         alt={'earth'}
         src={`${process.env.PUBLIC_URL}/images/earth.png`} />
       <div className={styles.footer}>
-        <Icon />
-        <p>690-302-400</p>
-        <p>karol.bernatowicz@gmail.com</p>
+          <Icon /> 
+        <div  className={styles.shadowBox}>
+          <p>690-302-400</p>
+        </div>
+        <div className={styles.shadowBox}>
+          <p>karol.bernatowicz@gmail.com</p>
+        </div>
       </div>
     </div>
   );

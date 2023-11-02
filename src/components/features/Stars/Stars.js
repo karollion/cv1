@@ -14,7 +14,7 @@ const Stars = () => {
       star.classList.add(styles.star);
 
       // size
-      const size = star.style.width = random(2, 7) + 'px';
+      const size = star.style.width = random(2, 5) + 'px';
       star.style.width = size;
       star.style.height = size;
 
@@ -39,7 +39,7 @@ const Stars = () => {
   }
 
   useEffect(() => {
-    populateSpace(200);
+    populateSpace(400);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -47,9 +47,13 @@ const Stars = () => {
     <div className={styles.rot}>
       <div className={styles.stars} id='stars'></div>
       <img 
-        className={styles.image}
+        className={styles.moon}
         alt={'moon'}
         src={`${process.env.PUBLIC_URL}/images/moon.png`} />
+      <img 
+        className={styles.mars}
+        alt={'mars'}
+        src={`${process.env.PUBLIC_URL}/images/mars.png`} />
     </div>
   );
 };

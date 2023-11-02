@@ -21,7 +21,15 @@
 
     li {
       display: inline-block;
-      margin: 0 5px;
+      margin:  0 10px;
+
     }
+  }
+  .shadowBox {
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px #000;
   }
 }
