@@ -180,7 +180,7 @@ const initialState = {
 
   activePage: 0,
 
-  language: 'EN',
+  language: 'English',
 };
 
 export default initialState;

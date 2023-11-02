@@ -166,7 +166,7 @@ const initialState = {
     {
       job: 'Junior Full Stack Developer',
       about: 'o mnie',
-      resume: 'podsumowanie',
+      resume: 'Życiorys',
       proj: 'projekty',
       contact: 'kontakt',
       phone: 'telefon',
@@ -181,7 +181,7 @@ const initialState = {
 
   activePage: 0,
 
-  language: 'PL',
+  language: 'Polski',
 };
 
 export default initialState;
