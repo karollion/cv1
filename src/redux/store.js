@@ -20,7 +20,7 @@ let initialState = initialStateEN;
 const reducer = (state, action) => {
   switch(action.type) {
     case 'CHANGE_LANGUAGE':
-      if(action.payload === 'EN'){
+      if(action.payload === 'English'){
         initialState = initialStatePL;
       } else {
         initialState = initialStateEN;

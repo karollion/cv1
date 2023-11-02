@@ -26,4 +26,15 @@
       font-family: $font-text2;
     }
   }
+
+  .fadeIn {
+    opacity: 1;
+    transition: opacity 750ms;
+    }
+
+  .fadeOut {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
 }
