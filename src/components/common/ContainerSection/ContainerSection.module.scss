@@ -4,45 +4,43 @@
   height: 700px;
   width: 100%;  
   position: relative;
+  padding: 10px;
   
   .inside {
-
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    background: -webkit-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
+    background: -moz-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
+    background: linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
   }
 
   .topbar {
-    @extend %frameBars;
+    @extend %frameBarsHorizontal;
     top: $distanceFromEdge;
-    left: $distanceFromEdge;
-    width: $barLength;
-    height: $barThickness;
+    left: $distanceFromEdge; 
   }
 
   .bottombar {
-    @extend %frameBars;
+    @extend %frameBarsHorizontal;
     bottom: $distanceFromEdge;
     left: $distanceFromEdge;
-    width: $barLength;
-    height: $barThickness;
   }
 
   .leftbar {
-    @extend %frameBars;
+    @extend %frameBarsVertical;
     left: $distanceFromEdge;
     top: $distanceFromEdge;
-    width: $barThickness;
-    height: $barLength;
   }
 
   .rightbar {
-    @extend %frameBars;
+    @extend %frameBarsVertical;
     right: $distanceFromEdge;
     top: $distanceFromEdge;
-    width: $barThickness;
-    height: $barLength;
   }
 
   .toprightcorner {
-    @extend %frameBars;
+    @extend %frameCorners;
     background-color: darkorange;
     top: 0;
     right: 0;
@@ -52,7 +50,7 @@
 
     &::after {
       content: '';
-      @extend %frameBars;
+      @extend %frameCorners;
       background-color: darkorange;
       top: 30px;
       right: 0;
@@ -63,7 +61,7 @@
   }
 
   .bottomleftcorner {
-    @extend %frameBars;
+    @extend %frameCorners;
     background-color: darkorange;
     bottom: 0;
     left: 0;
@@ -73,7 +71,7 @@
 
     &::after {
       content: '';
-      @extend %frameBars;
+      @extend %frameCorners;
       background-color: darkorange;
       bottom: 30px;
       left: 0;
@@ -82,4 +80,25 @@
       border-radius: 5px 5px  0 0/ 5px 5px 0 0;
       }
   }
+
+  .topleftcorner {
+    @extend %frameCorners;
+    background-color: darkorange;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius:  5px;
+  }
+
+  .bottomrightcorner {
+    @extend %frameCorners;
+    background-color: darkorange;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius:  5px;
+  }
+  
 }

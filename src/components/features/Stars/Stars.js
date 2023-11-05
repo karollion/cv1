@@ -51,9 +51,13 @@ const Stars = () => {
         alt={'moon'}
         src={`${process.env.PUBLIC_URL}/images/moon.png`} />
       <img 
-        className={styles.mars}
-        alt={'mars'}
-        src={`${process.env.PUBLIC_URL}/images/mars.png`} />
+        className={styles.nebula2}
+        alt={'nebula'}
+        src={`${process.env.PUBLIC_URL}/images/nebula2.png`} />
+      <img 
+        className={styles.nebula3}
+        alt={'nebula'}
+        src={`${process.env.PUBLIC_URL}/images/nebula3.png`} />
       <img 
         className={styles.nebula}
         alt={'nebula'}

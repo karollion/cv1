@@ -58,7 +58,23 @@ $distanceFromEdge: 10px;
 $barThickness: 15px;
 $barLength: 97%;
 
-%frameBars {
+%frameBarsVertical {
   position: absolute;
   background-color: #fff;
+  width: $barThickness;
+  height: $barLength;
+  background-image: url("../../public/images/sidebar.jpg");
+  background-size: 100% ;
+}
+%frameBarsHorizontal {
+  position: absolute;
+  background-color: #fff;
+  width: $barLength;
+  height: $barThickness;
+  background-image: url("../../public/images/topbar.jpg");
+  background-size: 100% 100%;
+}
+
+%frameCorners{
+  position: absolute;
 }
