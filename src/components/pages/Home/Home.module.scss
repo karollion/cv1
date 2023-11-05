@@ -18,7 +18,7 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
-  color: $color-light;
+  color: $color-text-light;
   text-align: center;
   font-size: $base-size * 1.5;
   
@@ -64,7 +64,8 @@
   width: 60%;
   margin: 10px auto;
   content: '';
-  background-color: $color-dark;
+  background-color: $color-text-light;
+  box-shadow: 0 0 5px $color-text-light;
   border-radius: 5px;
 }
 }

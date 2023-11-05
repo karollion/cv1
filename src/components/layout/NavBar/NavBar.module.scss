@@ -21,8 +21,15 @@
   }
 
   .menu {
-    @extend %backgroundGlass;
+    background: #000000;
+    background: -webkit-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
+    background: -moz-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
+    background: linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
     border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgb(134, 134, 134);
     display: flex;
     padding: 0 10px;
   }
