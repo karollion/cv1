@@ -41,7 +41,6 @@
 
   .toprightcorner {
     @extend %frameCorners;
-    background-color: darkorange;
     top: 0;
     right: 0;
     width: 150px;
@@ -51,7 +50,7 @@
     &::after {
       content: '';
       @extend %frameCorners;
-      background-color: darkorange;
+
       top: 30px;
       right: 0;
       width: 35px;
@@ -62,7 +61,6 @@
 
   .bottomleftcorner {
     @extend %frameCorners;
-    background-color: darkorange;
     bottom: 0;
     left: 0;
     width: 150px;
@@ -72,7 +70,6 @@
     &::after {
       content: '';
       @extend %frameCorners;
-      background-color: darkorange;
       bottom: 30px;
       left: 0;
       width: 35px;
@@ -83,7 +80,6 @@
 
   .topleftcorner {
     @extend %frameCorners;
-    background-color: darkorange;
     top: 0;
     left: 0;
     width: 35px;
@@ -93,7 +89,6 @@
 
   .bottomrightcorner {
     @extend %frameCorners;
-    background-color: darkorange;
     bottom: 0;
     right: 0;
     width: 35px;
