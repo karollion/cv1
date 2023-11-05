@@ -16,16 +16,25 @@
   
   .mars {
     position: absolute;
-    left: 70%;
+    left: 75%;
     top: 40%;
     width: 150px;
     height: 150px;
   }
 
+  .nebula {
+    position: absolute;
+    left:25%;
+    top: 60%;
+    width: 450px;
+    height: 450px;
+  }
+
   .stars {
     height: 100%;
     width: 100%;
-    background: #000000;
+    background: rgb(0,31,65);
+    background: linear-gradient(146deg, rgba(0,31,65,1) 0%, rgba(0,0,0,1) 100%);
     position: relative;
   }
   .star {

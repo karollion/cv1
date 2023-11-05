@@ -18,14 +18,6 @@ const initialState = {
       position: 'Electro-automatic',
       details: 'My duties included the repair and maintenance of machines, conducting technical inspections and ensuring the continuity of machine operation. I worked with Siemens brand controllers.',
     },
-    {
-      id: 3,
-      years: '2012 - 2012',
-      institution: 'Techaco sp. z o.o.',
-      city: 'Gdańsk',
-      position: 'Trainee',
-      details: 'Work as a student internship. My duties included helping to start a home solar power plant and work on assembling industrial fittings.',
-    },
   ],
 
   education: [

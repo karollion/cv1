@@ -1,0 +1,85 @@
+@import '../../../styles/settings.scss';
+
+.containerSection {
+  height: 700px;
+  width: 100%;  
+  position: relative;
+  
+  .inside {
+
+  }
+
+  .topbar {
+    @extend %frameBars;
+    top: $distanceFromEdge;
+    left: $distanceFromEdge;
+    width: $barLength;
+    height: $barThickness;
+  }
+
+  .bottombar {
+    @extend %frameBars;
+    bottom: $distanceFromEdge;
+    left: $distanceFromEdge;
+    width: $barLength;
+    height: $barThickness;
+  }
+
+  .leftbar {
+    @extend %frameBars;
+    left: $distanceFromEdge;
+    top: $distanceFromEdge;
+    width: $barThickness;
+    height: $barLength;
+  }
+
+  .rightbar {
+    @extend %frameBars;
+    right: $distanceFromEdge;
+    top: $distanceFromEdge;
+    width: $barThickness;
+    height: $barLength;
+  }
+
+  .toprightcorner {
+    @extend %frameBars;
+    background-color: darkorange;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px 18px 0 5px / 5px 18px 0 5px;
+
+    &::after {
+      content: '';
+      @extend %frameBars;
+      background-color: darkorange;
+      top: 30px;
+      right: 0;
+      width: 35px;
+      height: 25px;
+      border-radius: 0 0 5px 5px / 0 0 5px 5px;
+      }
+  }
+
+  .bottomleftcorner {
+    @extend %frameBars;
+    background-color: darkorange;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 35px;
+    border-radius:  0 5px 5px 18px/  0 5px 5px 18px;
+
+    &::after {
+      content: '';
+      @extend %frameBars;
+      background-color: darkorange;
+      bottom: 30px;
+      left: 0;
+      width: 35px;
+      height: 25px;
+      border-radius: 5px 5px  0 0/ 5px 5px 0 0;
+      }
+  }
+}

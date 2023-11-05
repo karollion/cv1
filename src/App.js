@@ -6,22 +6,40 @@ import Projects from './components/pages/Projects/Projects';
 import Contact from './components/pages/Contact/Contact';
 import Container from './components/common/Container/Container';
 import Stars from './components/features/Stars/Stars';
-import { Routes, Route } from 'react-router-dom';
-
+import { useEffect, useState } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 const App = () => {
+
+  const location = useLocation();
+  const [displayLocation, setDisplayLocation] = useState(location);
+  const [transitionStage, setTransistionStage] = useState("fadeIn");
+
+  useEffect(() => {
+    if (location !== displayLocation) setTransistionStage("fadeOut");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location]);
 
   return (
     <div>
       <Stars />
       <NavBar />
       <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div
+          className={`${transitionStage}`}
+          onAnimationEnd={() => {
+            if (transitionStage === "fadeOut") {
+              setTransistionStage("fadeIn");
+              setDisplayLocation(location);
+            }
+        }}>
+          <Routes location={displayLocation}>
+            <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </Container>
       <Footer />
     </div>

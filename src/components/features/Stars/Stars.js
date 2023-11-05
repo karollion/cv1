@@ -19,7 +19,7 @@ const Stars = () => {
       star.style.height = size;
 
       // positon
-      star.style.top = random(2, 98) + '%';
+      star.style.top = random(2, 85) + '%';
       star.style.left = random(2, 98) + '%';
 
       // glow
@@ -39,7 +39,7 @@ const Stars = () => {
   }
 
   useEffect(() => {
-    populateSpace(400);
+    populateSpace(150);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -54,6 +54,10 @@ const Stars = () => {
         className={styles.mars}
         alt={'mars'}
         src={`${process.env.PUBLIC_URL}/images/mars.png`} />
+      <img 
+        className={styles.nebula}
+        alt={'nebula'}
+        src={`${process.env.PUBLIC_URL}/images/nebula.png`} />
     </div>
   );
 };

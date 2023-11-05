@@ -1,4 +1,5 @@
 @import './settings.scss';
+@import "./typography.scss";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -20,4 +21,35 @@ body {
   margin: 0 auto;
 }
 
-@import "./typography.scss";
+.fadeIn {
+  width: 100%;
+  animation: 0.8s fadeIn forwards;
+}
+
+.fadeOut {
+  width: 100%;
+  animation: 0.8s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    //opacity: 0;
+    transform: translate(0, -150%);
+  }
+  to {
+    //opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    //opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -150%);
+    //opacity: 0;
+  }
+}
+

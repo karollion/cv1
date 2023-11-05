@@ -2,8 +2,6 @@
 
 .resume {
   color: $color-text-light;
-  margin-top: 2vh;
-  z-index: 2;
 
   .title {
     font-size: $base-size * 2;
@@ -11,8 +9,6 @@
   }
 
   .section {
-    @extend %backgroundGlass;
-    margin: 30px auto;
     color: $color-text-light;
   }
 }

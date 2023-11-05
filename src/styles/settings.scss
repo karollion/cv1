@@ -16,12 +16,12 @@ $transition: all 0.5s;
 $earthsize: 300px;
 
 %backgroundGlass {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgb(158, 154, 154);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0);
   backdrop-filter: blur(9.1px);
   -webkit-backdrop-filter: blur(9.1px);
-  border: 1px solid rgba(255, 255, 255, 0.43);
+  border: 1px solid rgba(255, 255, 255);
 }
 
 // ---------- Animations for hover ---------- //
@@ -50,4 +50,15 @@ $transitionScaleCart: scale(1);
   &:hover {
     background: rgba(255, 255, 255, 0.35);
   }
+}
+
+// -------------- Frame section --------------
+
+$distanceFromEdge: 10px;
+$barThickness: 15px;
+$barLength: 97%;
+
+%frameBars {
+  position: absolute;
+  background-color: #fff;
 }

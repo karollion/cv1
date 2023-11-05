@@ -18,14 +18,6 @@ const initialState = {
       position: 'Elektroautomatyk',
       details: 'Do moich obowiązków należała naprawa i konserwacja maszyn, przeprowadzanie przeglądów technicznych oraz zapewnienie ciągłości pracy maszyn. Pracowałem ze sterownikami marki Siemens.',
     },
-    {
-      id: 3,
-      years: '2012 - 2012',
-      institution: 'Techaco sp. z o.o.',
-      city: 'Gdańsk',
-      position: 'Praktykant',
-      details: 'Praca jako praktyka studencka. Do moich obowiązków należała pomoc przy uruchomieniu przydomowej elektrowni słonecznej oraz praca przy montażu armatury przemysłowej.',
-    },
   ],
 
   education: [

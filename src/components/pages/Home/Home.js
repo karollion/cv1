@@ -2,14 +2,15 @@ import styles from './Home.module.scss';
 import { useSelector } from 'react-redux';
 import { getAbout, getInterfaceElements } from '../../../redux/store';
 import Icon from '../../common/Icon/Icon';
+import ContainerSection from '../../common/ContainerSection/ContainerSection';
 
 const Home = () => {
   const interfElem = useSelector(getInterfaceElements);
   const about = useSelector(getAbout);
 
   return (
-    <div className={styles.home}>
-      <div className={styles.container}>
+    <ContainerSection>
+      <div className={styles.home}>
         <div className={styles.imageContainer}>
           <div className={styles.imageContainerUp}>
             <img 
@@ -28,7 +29,7 @@ const Home = () => {
           <p>{about}</p>
         </div>
       </div>
-    </div>
+    </ContainerSection>
   );
 };
 
