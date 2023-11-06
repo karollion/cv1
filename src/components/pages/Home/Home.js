@@ -3,16 +3,24 @@ import { useSelector } from 'react-redux';
 import { getAbout, getInterfaceElements } from '../../../redux/store';
 import Icon from '../../common/Icon/Icon';
 import ContainerSection from '../../common/ContainerSection/ContainerSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
   const interfElem = useSelector(getInterfaceElements);
   const about = useSelector(getAbout);
+  AOS.init();
 
   return (
     <ContainerSection>
       <div className={styles.home}>
-        <div className={styles.imageContainer}>
-          <div className={styles.imageContainerUp}>
+        <div 
+          data-aos="fade-right" 
+          data-aos-delay="500"
+          data-aos-once="true"
+          className={styles.imageContainer}>
+          <div className={styles.imageContainerUp}
+          >
             <img 
               className={styles.image}
               alt={'profile'}
@@ -25,7 +33,12 @@ const Home = () => {
             <Icon />
           </div>
         </div>
-        <div className={styles.info}>
+        <div 
+          data-aos="fade-left" 
+          data-aos-delay="500"
+          data-aos-once="true"
+          className={styles.info}
+          >
           <p>{about}</p>
         </div>
       </div>

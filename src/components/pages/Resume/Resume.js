@@ -14,16 +14,16 @@ const Resume = () => {
     <ContainerSection>
       <div className={styles.resume}>
         <section className={styles.section}>
-          <h2 className={styles.title}>{interfElem[0].skills}</h2>
-          <Lists />
-        </section>
-        <section className={styles.section}>
         <h2 className={styles.title}>{interfElem[0].education}</h2>
           {education.map(education => <Element key={education.id} {...education}  />)}
         </section>
         <section className={styles.section}>
           <h2 className={styles.title}>{interfElem[0].experience}</h2>
           {experience.map(experience => <Element key={experience.id} {...experience}  />)}
+        </section>
+        <section className={styles.section}>
+          <h2 className={styles.title}>{interfElem[0].skills}</h2>
+          <Lists />
         </section>
       </div>
     </ContainerSection>
