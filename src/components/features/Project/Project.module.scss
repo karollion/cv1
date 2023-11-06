@@ -1,7 +1,8 @@
 @import '../../../styles/settings.scss';
 
 .container {
-  @extend %backgroundGlass;
+ // @extend %backgroundGlass;
+ border: 1px solid rgb(221, 221, 221);
   margin: 30px auto;
   display: flex;
   gap: 10px;

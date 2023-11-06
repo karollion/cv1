@@ -28,8 +28,8 @@ const Projects = () => {
   };
 
   return (
-    <div className={styles.projects}>
-      <ContainerSection>
+    <ContainerSection>
+        <div className={styles.projects}>
         <Carousel
           swipeable={true}
           draggable={false}
@@ -50,8 +50,8 @@ const Projects = () => {
         >
           {projects.map(project => <Project key={project.id} {...project}  />)}
         </Carousel>
-      </ContainerSection>
-    </div>
+      </div>
+    </ContainerSection>
   );
 };
 
