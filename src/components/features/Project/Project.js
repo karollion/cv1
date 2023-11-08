@@ -1,10 +1,18 @@
 import styles from './Project.module.scss';
 import Button from '../../common/Button/Button';
 import Label from '../../common/Label/Label';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = props => {
+  AOS.init();
+
   return (
-    <div className={styles.container}>
+    <div 
+      data-aos="fade-right" 
+      data-aos-delay="500"
+      data-aos-once="true"
+      className={styles.container}>
       <div className={styles.toImage}>
         <img 
           className={styles.image}

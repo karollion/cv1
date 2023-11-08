@@ -109,7 +109,7 @@ const initialState = {
       link: 'https://wdp-2309-01.netlify.app/',
     },
     {
-      id: 1,
+      id: 3,
       title: 'Music Service',
       tech: [
         {
@@ -134,6 +134,30 @@ const initialState = {
     },
     {
       id: 2,
+      title: 'Pizzeria',
+      tech: [
+        {
+          id: 1,
+          color: {background: '#f16529'},
+          name: 'HTML',
+        },
+        {
+          id: 2,
+          color: {background: '#29a5d1'},
+          name: 'CSS',
+        },
+        {
+          id: 3,
+          color: {background: '#ffdf00'},
+          name: 'JavaScript',
+        },
+      ],
+      img: 'pizza',
+      about: "Pizzeria website",
+      link: 'https://8-project-pizzeria--karollion.repl.co/#/home',
+    },
+    {
+      id: 1,
       title: 'Corporate website',
       tech: [
         {
