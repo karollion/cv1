@@ -17,14 +17,16 @@
   background-size: 100% 112%;
 
   a{
-    color: $color-text-light;
+    @extend %color-hover;
+    @extend %transitionHover;
+    color: $color-text-dark;
   }
 
   .menu {
     background: #000000;
     background: -webkit-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
     background: -moz-linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
-    background: linear-gradient(to top, #000000 0%, #020019 50%, #000000 100%);
+    background: linear-gradient(0deg,#eee 0%,#e3e3e3 10%,#fff 20.1%,#fff 25%,#f0f0f0 26%,#fff 28.000000000000004%,#ddd 55.00000000000001%,#eee 100%);
     border-radius: 0 0 16px 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0);
     backdrop-filter: blur(9.1px);
@@ -41,9 +43,8 @@
   }
   
   li {
+    @extend %color-hover;
     @extend %transitionHover;
-    @extend %navBarHover;
-    color: $color-text-light;
     display: flex;
     align-items: center;
     margin: 0;
@@ -54,7 +55,7 @@
     .navlink {
       width: 100%;
       height: 100%;
-      padding: 0 7px;
+      //padding: 0 7px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -62,15 +63,9 @@
     
   }
   .linkActive{
-    &::after {
-      display: block;
-      height: 5px;
-      width: 60%;
-      margin: 2px auto;
-      content: '';
-      background-color: $color-dark;
-      border-radius: 5px;
-    }
+    color: hsl(210, 100%, 40%);
+    text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+  
   }
   .input,label{
     display: none;

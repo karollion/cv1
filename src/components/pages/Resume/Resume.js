@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { getInterfaceElements, getAllEducation, getAllExperience } from '../../../redux/store';
 import Lists from '../../features/Lists/Lists';
 import ContainerSection from '../../common/ContainerSection/ContainerSection';
+import PageLabel from '../../common/PageLabel/PageLabel';
 
 const Resume = () => {
   const experience = useSelector(getAllExperience);
@@ -12,6 +13,7 @@ const Resume = () => {
 
   return (
     <ContainerSection>
+      <PageLabel>{interfElem[0].resume}</PageLabel>
       <div className={styles.resume}>
         <section className={styles.section}>
         <h2 className={styles.title}>{interfElem[0].education}</h2>

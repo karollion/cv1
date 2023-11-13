@@ -5,6 +5,7 @@ import Icon from '../../common/Icon/Icon';
 import ContainerSection from '../../common/ContainerSection/ContainerSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PageLabel from '../../common/PageLabel/PageLabel';
 
 const Contact = () => {
   const interfElem = useSelector(getInterfaceElements);
@@ -12,6 +13,7 @@ const Contact = () => {
  
   return (
     <ContainerSection>
+      <PageLabel>{interfElem[0].contact}</PageLabel>
       <div 
         data-aos="fade-right" 
         data-aos-delay="500"

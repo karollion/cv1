@@ -1,4 +1,5 @@
 import styles from './ContainerSection.module.scss';
+import PageBRCorner from '../PageBRCorner/PageBRCorner';
 
 const ContainerSection = props => {
     return (
@@ -8,10 +9,9 @@ const ContainerSection = props => {
             <div className={styles.bottombar}></div>
             <div className={styles.leftbar}></div>
             <div className={styles.rightbar}></div>
-            <div className={styles.toprightcorner}></div>
             <div className={styles.bottomleftcorner}></div>
             <div className={styles.topleftcorner}></div>
-            <div className={styles.bottomrightcorner}></div>
+            <PageBRCorner />
         </div>
     );
 };

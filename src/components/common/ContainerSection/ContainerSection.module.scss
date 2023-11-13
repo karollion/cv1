@@ -42,26 +42,6 @@
     top: $distanceFromEdge;
   }
 
-  .toprightcorner {
-    @extend %frameCorners;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 35px;
-    border-radius: 5px 18px 0 5px / 5px 18px 0 5px;
-
-    &::after {
-      content: '';
-      @extend %frameCorners;
-
-      top: 30px;
-      right: 0;
-      width: 35px;
-      height: 25px;
-      border-radius: 0 0 5px 5px / 0 0 5px 5px;
-      }
-  }
-
   .bottomleftcorner {
     @extend %frameCorners;
     bottom: 0;
@@ -78,25 +58,6 @@
     width: 35px;
     height: 35px;
     border-radius:  5px;
-  }
-
-  .bottomrightcorner {
-    @extend %frameCorners;
-    bottom: 0;
-    right: 0;
-    width: 150px;
-    height: 35px;
-    border-radius: 5px 0 18px 5px/ 5px 0 18px 5px;
-
-    &::after {
-      content: '';
-      @extend %frameCorners;
-      bottom: 30px;
-      right: 0;
-      width: 35px;
-      height: 25px;
-      border-radius:   5px 5px 0 0/ 5px 5px 0 0 ;
-      }
   }
   
 }
