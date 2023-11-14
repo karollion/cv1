@@ -4,6 +4,8 @@ import { useSelector } from 'react-redux';
 import { getTechnologies, getSkills} from '../../../redux/store';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
+import FrameSectRight from '../../common/FrameSectRight/FrameSectRight';
 
 const Lists = props => {
   const skills = useSelector(getSkills);
@@ -17,18 +19,33 @@ const Lists = props => {
         data-aos-delay="500"
         data-aos-once="true"
         className={styles.left}>
-        <ul>
-          {skills.map(skill => <ListElement key={skill.id} {...skill} />)}
-        </ul>
+        <FrameSectLeft>
+          <div className={styles.techs}>
+            <div className={styles.lefttech}>
+              <ul>
+                {technologies.filter((item, index) => index < 11).map(tech => <ListElement key={tech.id} {...tech} />)}
+              </ul>
+            </div>
+            <div className={styles.righttech}>
+              <ul>
+                {technologies.filter((item, index) => index > 10).map(tech => <ListElement key={tech.id} {...tech} />)}
+              </ul>
+            </div>
+          </div>
+        </FrameSectLeft>
       </div>
       <div 
         data-aos="fade-left" 
         data-aos-delay="500"
         data-aos-once="true"
         className={styles.right}>
-        <ul>
-        {technologies.map(tech => <ListElement key={tech.id} {...tech} />)}
-        </ul>
+        <FrameSectRight>
+          <div className={styles.skills}>
+            <ul>
+              {skills.map(skill => <ListElement key={skill.id} {...skill} />)}
+            </ul>
+          </div>
+        </FrameSectRight>
       </div>
     </div>
   );

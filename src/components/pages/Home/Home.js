@@ -6,7 +6,8 @@ import ContainerSection from '../../common/ContainerSection/ContainerSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PageLabel from '../../common/PageLabel/PageLabel';
-import FrameSect from '../../common/FrameSect/FrameSect'
+import FrameSectRight from '../../common/FrameSectRight/FrameSectRight'
+import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
 
 const Home = () => {
   const interfElem = useSelector(getInterfaceElements);
@@ -22,21 +23,21 @@ const Home = () => {
           data-aos-delay="500"
           data-aos-once="true"
           className={styles.imageContainer}>
-            <FrameSect>
-          <div className={styles.imageContainerUp}>
-              <img 
-                className={styles.image}
-                alt={'profile'}
-                src={`${process.env.PUBLIC_URL}/images/profile.jpg`} />
-              <h2>Karol</h2>
-              <h2 className={styles.line}>Bernatowicz</h2>
-              <p>{interfElem[0].job}</p>
-            
-          </div>
-          <div className={styles.imageContainerDown}>
-            <Icon />
-          </div>
-          </FrameSect>
+          <FrameSectLeft>
+            <div className={styles.imageContainerUp}>
+                <img 
+                  className={styles.image}
+                  alt={'profile'}
+                  src={`${process.env.PUBLIC_URL}/images/profile.jpg`} />
+                <h2>Karol</h2>
+                <h2 className={styles.line}>Bernatowicz</h2>
+                <p>{interfElem[0].job}</p>
+              
+            </div>
+            <div className={styles.imageContainerDown}>
+              <Icon />
+            </div>
+          </FrameSectLeft>
         </div>
         <div 
           data-aos="fade-left" 
@@ -44,7 +45,11 @@ const Home = () => {
           data-aos-once="true"
           className={styles.info}
           >
-          <p>{about}</p>
+          <FrameSectRight>
+            <div className={styles.infoContainer}>
+              <p>{about}</p>
+            </div>
+          </FrameSectRight>
         </div>
       </div>
     </ContainerSection>

@@ -57,19 +57,87 @@ const initialState = {
   technologies: [
     {
       id: 1,
-      name: 'HTML, CSS',
+      name: 'HTML',
     },
     {
       id: 2,
-      name: 'JavaScript',
+      name: 'CSS',
     },
     {
       id: 3,
-      name: 'React, Redux',
+      name: 'RWD',
     },
     {
       id: 4,
-      name: 'Photoshop',
+      name: 'Bootstrap',
+    },
+    {
+      id: 5,
+      name: 'NPM',
+    },
+    {
+      id: 6,
+      name: 'Git',
+    },
+    {
+      id: 7,
+      name: 'JavaScript',
+    },
+    {
+      id: 8,
+      name: 'React',
+    },
+    {
+      id: 9,
+      name: 'Webpack',
+    },
+    {
+      id: 10,
+      name: 'MongoDB',
+    },
+    {
+      id: 11,
+      name: 'Mongoose',
+    },
+    {
+      id: 12,
+      name: 'Jira',
+    },
+    {
+      id: 13,
+      name: 'TypeScript',
+    },
+    {
+      id: 14,
+      name: 'NestJS',
+    },
+    {
+      id: 15,
+      name: 'MySQL',
+    },
+    {
+      id: 16,
+      name: 'Prisma',
+    },
+    {
+      id: 17,
+      name: 'Express',
+    },
+    {
+      id: 18,
+      name: 'AJAX',
+    },
+    {
+      id: 19,
+      name: 'Node',
+    },
+    {
+      id: 20,
+      name: 'WebSocket',
+    },
+    {
+      id: 21,
+      name: 'Redux',
     },
   ],
 

@@ -6,6 +6,7 @@ import ContainerSection from '../../common/ContainerSection/ContainerSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import PageLabel from '../../common/PageLabel/PageLabel';
+import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
 
 const Contact = () => {
   const interfElem = useSelector(getInterfaceElements);
@@ -20,11 +21,15 @@ const Contact = () => {
         data-aos-once="true"
         className={`${styles.contact} `}
         >
-          <h2 className={styles.title}>{interfElem[0].contact}</h2>
-          <h2>{interfElem[0].phone}: 690-302-400</h2>
-          <h2>{interfElem[0].email}: <a href = "mailto: karol.bernatowicz@gmail.com">karol.bernatowicz@gmail.com</a></h2>
-          <Icon />
-        </div>
+        <FrameSectLeft>
+          <div className={styles.container}>
+            <h2 className={styles.title}>{interfElem[0].contact}</h2>
+            <h2>{interfElem[0].phone}: 690-302-400</h2>
+            <h2>{interfElem[0].email}: <a href = "mailto: karol.bernatowicz@gmail.com">karol.bernatowicz@gmail.com</a></h2>
+            <Icon />
+          </div>
+        </FrameSectLeft>
+      </div>
     </ContainerSection>
   );
 };

@@ -10,13 +10,23 @@
   gap: 30px;
   color: $color-text-light;
 
-  .title {
-    font-size: $base-size * 2;
-    margin-left: 10px;
-  }
+  .container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 30px;
 
-  a {
-    color: $color-text-light;
-    font-family: $font-text2;
+    .title {
+      font-size: $base-size * 2;
+      margin-left: 10px;
+    }
+
+    a {
+      color: $color-text-light;
+      font-family: $font-text2;
+    }
   }
 }
