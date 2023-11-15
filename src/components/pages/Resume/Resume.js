@@ -21,7 +21,6 @@ const Resume = () => {
       <PageLabel>{interfElem[0].resume}</PageLabel>
       <div className={styles.resume}>
         <section className={styles.section}>
-          <h2 className={styles.title}>{interfElem[0].skills}</h2>
           <Lists />
         </section>
         <section className={styles.eduexp}>

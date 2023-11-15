@@ -19,13 +19,17 @@
     align-items: center;
     position: absolute;
     z-index: 990;
-    color: $color-text-light;
+    color: #fff;
     text-shadow: #000 0 0 10px;
     font-size: $base-size * 1.5;
     font-weight: 600;
     
     p {
       margin: 0;
+    }
+
+    a {
+      color: #fff;
     }
 
     .shadowBox {

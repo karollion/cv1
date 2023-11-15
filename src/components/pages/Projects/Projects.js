@@ -12,9 +12,8 @@ const Projects = () => {
   return (
     <ContainerSection>
       <PageLabel>{interfElem[0].proj}</PageLabel>
-        <div 
-          className={styles.projects}>
-          {projects.map(project => <Project key={project.id} {...project}  />)}
+      <div className={styles.projects}>
+        {projects.map(project => <Project key={project.id} {...project}  />)}
       </div>
     </ContainerSection>
   );

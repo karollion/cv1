@@ -258,8 +258,9 @@ const initialState = {
       media: 'media społecznościowe',
       experience: 'doświadczenie zawodowe',
       education: 'edukacja',
-      skills: 'Umiejętności i wiedza',
-      websites: 'strony internetowe',
+      skills: 'Umiejętności',
+      tech: 'Technologie',
+      websites: 'Strony internetowe',
     },
   ],
 
