@@ -100,13 +100,19 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .home {
     width: 100%;
     height: 100%;
     flex-direction: column;
+    padding:60px 0;
   }
 
-  .imageContainer,.info {
+  .imageContainer {
     width: 100%;
   }
+
+  .info {
+    width: 100%;
+  }
+
 }

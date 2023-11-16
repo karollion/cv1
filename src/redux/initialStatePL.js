@@ -149,27 +149,22 @@ const initialState = {
       tech: [
         {
           id: 1,
-          color: {background: '#f16529'},
           name: 'HTML',
         },
         {
           id: 2,
-          color: {background: '#29a5d1'},
           name: 'CSS',
         },
         {
           id: 3,
-          color: {background: '#ffdf00'},
           name: 'JavaScript',
         },
         {
           id: 4,
-          color: {background: '#00d5ff'},
           name: 'React',
         },
         {
           id: 5,
-          color: {background: '#764abc'},
           name: 'Redux',
         },
       ],
@@ -183,17 +178,14 @@ const initialState = {
       tech: [
         {
           id: 1,
-          color: {background: '#f16529'},
           name: 'HTML',
         },
         {
           id: 2,
-          color: {background: '#29a5d1'},
           name: 'CSS',
         },
         {
           id: 3,
-          color: {background: '#ffdf00'},
           name: 'JavaScript',
         },
       ],
@@ -207,17 +199,14 @@ const initialState = {
       tech: [
         {
           id: 1,
-          color: {background: '#f16529'},
           name: 'HTML',
         },
         {
           id: 2,
-          color: {background: '#29a5d1'},
           name: 'CSS',
         },
         {
           id: 3,
-          color: {background: '#ffdf00'},
           name: 'JavaScript',
         },
       ],
@@ -231,12 +220,10 @@ const initialState = {
       tech: [
         {
           id: 1,
-          color: {background: '#f16529'},
           name: 'HTML',
         },
         {
           id: 2,
-          color: {background: '#29a5d1'},
           name: 'CSS',
         },
       ],

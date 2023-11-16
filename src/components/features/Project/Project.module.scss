@@ -52,5 +52,26 @@
     flex-wrap: wrap;
     gap: 10px;
   }
+}
+
+@media (max-width: 768px) {
+  .insidecontainer  {
+    height: 100%;
+    flex-direction: column;
+
+    .toImage {
+      width: 100%;
+      height: 100%;
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .toDescription {
+      width: 100%;
+      padding: 0;
+    }
+  }
 
 }

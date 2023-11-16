@@ -40,6 +40,8 @@
     @extend %frameBarsVertical;
     right: $distanceFromEdge;
     top: $distanceFromEdge;
+    top: 0;
+    height: 100%
   }
 
   .bottomleftcorner {
