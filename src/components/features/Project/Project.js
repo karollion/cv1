@@ -2,11 +2,15 @@ import styles from './Project.module.scss';
 import Button from '../../common/Button/Button';
 import Label from '../../common/Label/Label';
 import AOS from 'aos';
+import { useSelector } from 'react-redux';
 import 'aos/dist/aos.css';
 import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
+import { getInterfaceElements } from '../../../redux/store';
 
 const Project = props => {
   AOS.init();
+  const interfElem = useSelector(getInterfaceElements);
+
 
   return (
     <div 
@@ -30,7 +34,7 @@ const Project = props => {
             </div>
             <p>{props.about}</p>
             <a href={props.link}>
-            <Button>Go to project</Button>
+            <Button>{interfElem[0].button}</Button>
             </a>
           </div>
         </div>

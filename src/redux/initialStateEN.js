@@ -247,6 +247,7 @@ const initialState = {
       skills: 'Skills',
       tech: 'Technologies',
       websites: 'Websites',
+      button: 'Go to project',
     },
   ],
 

@@ -243,11 +243,12 @@ const initialState = {
       phone: 'telefon',
       email: 'e-mail',
       media: 'media społecznościowe',
-      experience: 'doświadczenie zawodowe',
+      experience: 'doświadczenie',
       education: 'edukacja',
       skills: 'Umiejętności',
       tech: 'Technologie',
       websites: 'Strony internetowe',
+      button: 'Idz do projektu',
     },
   ],
 
