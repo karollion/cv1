@@ -168,7 +168,7 @@ const initialState = {
         },
       ],
       img: 'bazar',
-      about: 'Team project.',
+      about: 'A website for a furniture store that I created with my team. I have completely created the "promoted" and "feedback" sections.',
       link: 'https://wdp-2309-01.netlify.app/',
     },
     {
@@ -210,7 +210,7 @@ const initialState = {
         },
       ],
       img: 'pizza',
-      about: "Pizzeria website",
+      about: "Pizzeria website. You can place an order online and reserve a table for a convenient date.",
       link: 'https://8-project-pizzeria--karollion.repl.co/#/home',
     },
     {
@@ -227,7 +227,7 @@ const initialState = {
         },
       ],
       img: 'alecto',
-      about: "Website built and styled according to the client's design.",
+      about: "Individual website design built and styled exactly according to the client's design.",
       link: 'https://karollion.github.io/Project-3-alecto/',
     },
   ],
@@ -240,6 +240,7 @@ const initialState = {
       proj: 'projects',
       contact: 'contact',
       phone: 'phone',
+      phonenum: '690-302-400',
       email: 'e-mail',
       media: 'socialmedia',
       experience: 'work experience',
@@ -248,6 +249,7 @@ const initialState = {
       tech: 'Technologies',
       websites: 'Websites',
       button: 'Go to project',
+      contacttitle: "Let's talk",
     },
   ],
 

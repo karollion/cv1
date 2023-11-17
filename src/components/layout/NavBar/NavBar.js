@@ -21,10 +21,10 @@ const NavBar = () => {
       </label>
       <div className={styles.menu}>
         <ul className={styles.nav}>
-          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/'>{interfElem[0].about}</NavLink></li>
-          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/resume'>{interfElem[0].resume}</NavLink></li>
-          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/projects'>{interfElem[0].proj}</NavLink></li>
-          <li><NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/contact'>{interfElem[0].contact}</NavLink></li>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/'><li>{interfElem[0].about}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/resume'><li>{interfElem[0].resume}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/projects'><li>{interfElem[0].proj}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/contact'><li>{interfElem[0].contact}</li></NavLink>
           <li onClick={languageClick} ><span>{language}</span></li>
           <li><label  htmlFor="toggle"><span>close</span></label></li>
         </ul>

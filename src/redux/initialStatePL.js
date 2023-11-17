@@ -169,7 +169,7 @@ const initialState = {
         },
       ],
       img: 'bazar',
-      about: 'Projekt grupowy.',
+      about: 'Strona sklepu meblowego którą zrobiłem wraz z zespołem. Zrobiłem w całości sekcje "promoted" oraz "feedback". ',
       link: 'https://wdp-2309-01.netlify.app/',
     },
     {
@@ -211,7 +211,7 @@ const initialState = {
         },
       ],
       img: 'pizza',
-      about: "Strona internetowa pizzeri",
+      about: "Strona internetowa pizzeri. Można dokonac zamówienie online jak i zarezerwowac stolik na dogodny termin.",
       link: 'https://8-project-pizzeria--karollion.repl.co/#/home',
     },
     {
@@ -228,7 +228,7 @@ const initialState = {
         },
       ],
       img: 'alecto',
-      about: "Strona internetowa zbudowana i stylizowana według projektu klienta.",
+      about: "Projekt indywidualny strony internetowej zbudowanej i stylizowanej dokładnie według projektu klienta.",
       link: 'https://karollion.github.io/Project-3-alecto/',
     },
   ],
@@ -241,6 +241,7 @@ const initialState = {
       proj: 'projekty',
       contact: 'kontakt',
       phone: 'telefon',
+      phonenum: '690-302-400',
       email: 'e-mail',
       media: 'media społecznościowe',
       experience: 'doświadczenie',
@@ -249,6 +250,7 @@ const initialState = {
       tech: 'Technologie',
       websites: 'Strony internetowe',
       button: 'Idz do projektu',
+      contacttitle: 'Porozmawiajmy',
     },
   ],
 
