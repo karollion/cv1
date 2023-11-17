@@ -12,6 +12,11 @@
     color: $color-text-light;
     font-size: $base-size * 3;
     text-shadow: #000 0 0 10px;
+    transition: all 0.5s;
+
+    &:hover {
+      font-size: $base-size * 4;
+    }
   }
 
   ul {
