@@ -1,17 +1,13 @@
 import styles from './NavBar.module.scss';
-import { useDispatch, useSelector } from 'react-redux';
-import { getInterfaceElements, changeLanguage, getLanguage } from '../../../redux/store';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
-  const language = useSelector(getLanguage);
-  const interfElem = useSelector(getInterfaceElements);
-  const dispatch = useDispatch();
+  const { t, i18n } = useTranslation();
 
-  const languageClick = e => {
-    e.preventDefault();
-    dispatch(changeLanguage(language));
-  }
+  const handleChangeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className={styles.navbar}>
@@ -21,12 +17,19 @@ const NavBar = () => {
       </label>
       <div className={styles.menu}>
         <ul className={styles.nav}>
-          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/'><li>{interfElem[0].about}</li></NavLink>
-          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/resume'><li>{interfElem[0].resume}</li></NavLink>
-          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/projects'><li>{interfElem[0].proj}</li></NavLink>
-          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/contact'><li>{interfElem[0].contact}</li></NavLink>
-          <li onClick={languageClick} ><span>{language}</span></li>
-          <li><label  htmlFor="toggle"><span>close</span></label></li>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/'><li>{t('navBar.about')}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/resume'><li>{t('navBar.resume')}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/projects'><li>{t('navBar.proj')}</li></NavLink>
+          <NavLink className={({ isActive }) => isActive ? styles.linkActive : ''} to='/contact'><li>{t('navBar.contact')}</li></NavLink>
+          <li onClick={() => {
+                  handleChangeLanguage('en');
+                }} >
+            <span>{t('navBar.language.english')}</span></li>
+          <li onClick={() => {
+                  handleChangeLanguage('pl');
+                }} >
+            <span>{t('navBar.language.polish')}</span></li>
+          <li><label  htmlFor="toggle"><span>{t('navBar.close')}</span></label></li>
         </ul>
       </div>
     </div>
