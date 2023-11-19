@@ -1,7 +1,9 @@
 import styles from './Footer.module.scss';
 import Icon from '../../common/Icon/Icon';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
 
   return (
     <div className={styles.root}>
@@ -12,10 +14,13 @@ const Footer = () => {
       <div className={styles.footer}>
           <Icon /> 
         <div  className={styles.shadowBox}>
-          <p>690-302-400</p>
+          <p>{t('footer.phone')}</p>
         </div>
         <div className={styles.shadowBox}>
-          <p>karol.bernatowicz@gmail.com</p>
+          <p>{t('footer.email')}</p>
+        </div>
+        <div className={styles.shadowBox}>
+          <p>{t('footer.rights')}</p>
         </div>
       </div>
     </div>

@@ -1,6 +1,4 @@
 import styles from './Home.module.scss';
-import { useSelector } from 'react-redux';
-import { getAbout, getInterfaceElements } from '../../../redux/store';
 import Icon from '../../common/Icon/Icon';
 import ContainerSection from '../../common/ContainerSection/ContainerSection';
 import AOS from 'aos';
@@ -8,15 +6,15 @@ import 'aos/dist/aos.css';
 import PageLabel from '../../common/PageLabel/PageLabel';
 import FrameSectRight from '../../common/FrameSectRight/FrameSectRight'
 import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-  const interfElem = useSelector(getInterfaceElements);
-  const about = useSelector(getAbout);
+  const { t } = useTranslation();
   AOS.init();
 
   return (
     <ContainerSection>
-      <PageLabel>{interfElem[0].about}</PageLabel>
+      <PageLabel>{t('about.label')}</PageLabel>
       <div className={styles.home}>
         <div 
           data-aos="fade-right" 
@@ -29,9 +27,9 @@ const Home = () => {
                   className={styles.image}
                   alt={'profile'}
                   src={`${process.env.PUBLIC_URL}/images/profile.jpg`} />
-                <h2>Karol</h2>
-                <h2 className={styles.line}>Bernatowicz</h2>
-                <p>{interfElem[0].job}</p>
+                <h2>{t('about.firstname')}</h2>
+                <h2 className={styles.line}>{t('about.lastname')}</h2>
+                <p>{t('about.job')}</p>
               
             </div>
             <div className={styles.imageContainerDown}>
@@ -47,7 +45,7 @@ const Home = () => {
           >
           <FrameSectRight>
             <div className={styles.infoContainer}>
-              <p>{about}</p>
+              <p>{t('about.abouttext')}</p>
             </div>
           </FrameSectRight>
         </div>
