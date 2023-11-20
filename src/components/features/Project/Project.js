@@ -12,10 +12,10 @@ const Project = props => {
 
   return (
     <div 
-      data-aos="fade-right" 
-      data-aos-delay="500"
-      data-aos-once="true"
-      className={styles.container}>
+    data-aos="fade-right" 
+    data-aos-delay="500"
+    data-aos-once="true"
+    className={styles.container}>
       <FrameSectLeft>
         <div className={styles.insidecontainer}>
           <div className={styles.toImage}>

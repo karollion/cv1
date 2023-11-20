@@ -17,11 +17,10 @@
     width: 450px;
     height: 450px;
     display: flex;
+    border: 1px solid $color-frames;
 
     .image {
       @extend %projectImageHover;
-      object-fit: cover;
-      border: 1px solid $color-frames;
     }
   }
 
