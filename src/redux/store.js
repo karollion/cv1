@@ -1,6 +1,5 @@
 import { createStore } from 'redux';
-import initialStateEN from './initialStateEN';
-import initialStatePL from './initialStatePL';
+import initialState from './initialState';
 
 //selectors
 export const getLanguage  = (state) => state.language;
@@ -10,22 +9,12 @@ export const getAllExperience = (state) => state.experience;
 export const getAllEducation = (state) => state.education;
 export const getSkills = (state) => state.skills;
 export const getTechnologies = (state) => state.technologies;
-export const getInterfaceElements = (state) => state.interfaceElements;
 
 // action creators
-export const changeLanguage = payload => ({type: 'CHANGE_LANGUAGE', payload});
 
-let initialState = initialStateEN;
 
 const reducer = (state, action) => {
   switch(action.type) {
-    case 'CHANGE_LANGUAGE':
-      if(action.payload === 'English'){
-        initialState = initialStatePL;
-      } else {
-        initialState = initialStateEN;
-      }
-       return {...initialState};
     default:
       return state;
   }

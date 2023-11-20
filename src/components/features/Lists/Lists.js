@@ -6,13 +6,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
 import FrameSectRight from '../../common/FrameSectRight/FrameSectRight';
-import { getInterfaceElements } from '../../../redux/store';
-
+import { useTranslation } from 'react-i18next';
 
 const Lists = props => {
   const skills = useSelector(getSkills);
   const technologies = useSelector(getTechnologies);
-  const interfElem = useSelector(getInterfaceElements);
+  const { t } = useTranslation();
   AOS.init();
 
   return (
@@ -24,7 +23,7 @@ const Lists = props => {
         className={styles.left}>
         <FrameSectLeft>
           <div className={styles.techs}>
-            <h2 className={styles.title}>{interfElem[0].tech}</h2>
+            <h2 className={styles.title}>{t('resume.technologies')}</h2>
             <div className={styles.lefttech}>
               <ul>
                 {technologies.filter((item, index) => index < 11).map(tech => <ListElement key={tech.id} {...tech} />)}
@@ -45,7 +44,7 @@ const Lists = props => {
         className={styles.right}>
         <FrameSectRight>
           <div className={styles.skills}>
-          <h2 className={styles.title}>{interfElem[0].skills}</h2>
+          <h2 className={styles.title}>{t('resume.skills.label')}</h2>
             <ul>
               {skills.map(skill => <ListElement key={skill.id} {...skill} />)}
             </ul>

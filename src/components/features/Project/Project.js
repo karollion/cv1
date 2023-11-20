@@ -2,15 +2,13 @@ import styles from './Project.module.scss';
 import Button from '../../common/Button/Button';
 import Label from '../../common/Label/Label';
 import AOS from 'aos';
-import { useSelector } from 'react-redux';
 import 'aos/dist/aos.css';
 import FrameSectLeft from '../../common/FrameSectLeft/FrameSectLeft';
-import { getInterfaceElements } from '../../../redux/store';
+import { useTranslation } from 'react-i18next';
 
 const Project = props => {
+  const { t } = useTranslation();
   AOS.init();
-  const interfElem = useSelector(getInterfaceElements);
-
 
   return (
     <div 
@@ -28,13 +26,13 @@ const Project = props => {
               src={`${process.env.PUBLIC_URL}/images/projects/${props.img}.png`} />
           </div>
           <div className={styles.toDescription}>
-            <h2>{props.title}</h2>
+            <h2>{t(`projects.project.${props.id}.title`)}</h2>
             <div className={styles.lebels}>
               {props.tech.map(tech => <Label key={tech.id} {...tech} />)}
             </div>
-            <p>{props.about}</p>
+            <p>{t(`projects.project.${props.id}.about`)}</p>
             <a href={props.link}>
-            <Button>{interfElem[0].button}</Button>
+            <Button>{t('projects.gobutton')}</Button>
             </a>
           </div>
         </div>
